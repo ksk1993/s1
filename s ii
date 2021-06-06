@@ -1,0 +1,7 @@
+import pandas as pd
+z = pd.read_csv('Iris.csv')
+z.head()
+pd.get_dummies(z['Species'])
+z.info()
+X = z[['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']]
+y = z[['Species']]
